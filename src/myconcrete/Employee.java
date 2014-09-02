@@ -14,12 +14,11 @@ public class Employee {
                     empCity,
                     empState,
                     empEmail, // Holds personal employee info
-    
+                    empPhone,
                     empDept; // Holds employee company info
     
     private int empIDNumber,
-                empZip,
-                empPhone; // Holds numeric employee info
+                empZip; // Holds numeric employee info
     
     
 // Methods that will store the local variables as public arguments
@@ -129,31 +128,20 @@ public class Employee {
          empZip = employeeZip;
      }
      
-     public String getEmpDept()
+     public int getEmpZip()
      {
-         return empDept;
+         return empZip;
      }
      
-     // set and get empDept
-     public void setEmpDept(String employeeDept)
+     // set and get empPhone
+     public void setEmpPhone(String employeePhone)
      {
-         empEmail = employeeDept;
+         empPhone = employeePhone;
      }
      
-     public String getEmpDept()
+     public String getEmpPhone()
      {
-         return empDept;
+         return empPhone;
      }
      
-     // set and get empDept
-     public void setEmpDept(String employeeDept)
-     {
-         empEmail = employeeDept;
-     }
-     
-     public String getEmpDept()
-     {
-         return empDept;
-     }
-    
 }

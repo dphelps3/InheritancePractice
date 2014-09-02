@@ -1,7 +1,7 @@
 
 package myconcrete;
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class EmployeeInput {
     
@@ -10,9 +10,7 @@ public class EmployeeInput {
     
     // Public variables that will link with the private variables of
     // the Employee class
-    
-    String employeeInput; // For user input
-    
+        
     String employeeFirstName,
                     employeeLastName,
                     employeeBirthdate,
@@ -20,75 +18,76 @@ public class EmployeeInput {
                     employeeCity,
                     employeeState,
                     employeeEmail, // Holds personal employee info
-    
+                    employeePhone,            
                     employeeDept; // Holds employee company info
     
     int employeeIDNumber,
-                employeeZip,
-                employeePhone; // Holds numeric employee info
+                employeeZip;
+                 // Holds numeric employee info
+    
+    // Create a scanner for keyboard input.
+    Scanner keyboard = new Scanner(System.in);
     
     // Create an Employee object
     Employee e = new Employee();
     
     // Get the user's company ID number
-    employeeInput = JOptionPane.showInputDialog(null, 
-            "Enter your company ID number: ");
-    employeeIDNumber = Integer.parseInt(employeeInput);
+    System.out.println("Enter your company ID number: ");
+    employeeIDNumber = keyboard.nextInt();
+    keyboard.nextLine();
 
     // Get the user's first name
-    employeeInput = JOptionPane.showInputDialog(null, 
-            "Enter your first name: ");
-    employeeFirstName = employeeInput;
+    System.out.println("Enter your first name: ");
+    employeeFirstName = keyboard.nextLine();
     
     // Get the user's last name
-    employeeInput = JOptionPane.showInputDialog(null, 
-            "Enter your last name: ");
-    employeeLastName = employeeInput;
+    System.out.println("Enter your last name: ");
+    employeeLastName = keyboard.nextLine();
     
     // Get the user's birthdate
-    employeeInput = JOptionPane.showInputDialog(null, 
-            "Enter your birthdate: ");
-    employeeBirthdate = employeeInput;
+    System.out.println("Enter your birthdate: ");
+    employeeBirthdate = keyboard.nextLine();
     
     // Get the user's street address
-    employeeInput = JOptionPane.showInputDialog(null, 
-            "Enter your street address: ");
-    employeeAddress = employeeInput;
+    System.out.println("Enter your street address: ");
+    employeeAddress = keyboard.nextLine();
     
     // Get the user's city
-    employeeInput = JOptionPane.showInputDialog(null, 
-            "Enter your city: ");
-    employeeCity = employeeInput;
+    System.out.println("Enter your city: ");
+    employeeCity = keyboard.nextLine();
     
     // Get the user's state
-    employeeInput = JOptionPane.showInputDialog(null, 
-            "Enter your state: ");
-    employeeState = employeeInput;
+    System.out.println("Enter your state: ");
+    employeeState = keyboard.nextLine();
     
     // Get the user's zip code
-    employeeInput = JOptionPane.showInputDialog(null, 
-            "Enter your zip code: ");
-    employeeZip = Integer.parseInt(employeeInput);
+    System.out.println("Enter your zip code: ");
+    employeeZip = keyboard.nextInt();
+    keyboard.nextLine();    
     
     // Get the user's phone number
-    employeeInput = JOptionPane.showInputDialog(null, 
-            "Enter your phone number: ");
-    employeePhone = Integer.parseInt(employeeInput);
+    System.out.println("Enter your phone number: ");
+    employeePhone = keyboard.nextLine();
     
     // Get the user's email address
-    employeeInput = JOptionPane.showInputDialog(null, 
-            "Enter your email address: ");
-    employeeEmail = employeeInput;
+    System.out.println("Enter your email address: ");
+    employeeEmail = keyboard.nextLine();
     
     // Get the user's department
-    employeeInput = JOptionPane.showInputDialog(null, 
-            "Enter your department: ");
-    employeeDept = employeeInput;
+   System.out.println("Enter your department: ");
+    employeeDept = keyboard.nextLine();
     
     
-    // Output information, getting the moethods from the Employee class
-    System.out.print("Name: " + e.getEmpFirstName() + "" + e.getEmpLastName());
-    
+    // Output information, getting the moet1232121hods from the Employee class
+    System.out.println("\n\nDP PRODUCTIONS EMPLOYEE INFORMATION"
+    + "\nID Number: " + e.getEmpIDNumber() +
+    "\nDepartment: " + e.getEmpDept() +
+    "\nBirthdate: " + e.getEmpBirthdate() +
+    "\nName: " + e.getEmpFirstName() + " " + e.getEmpLastName() +
+    "\nAddress: " + e.getEmpAddress() +
+    "\n" + (e.getEmpCity() + ", " + e.getEmpState() + " " + e.getEmpZip() +
+    "\nPhone Number: " + e.getEmpPhone() +
+    "\nEmail Address: " + e.getEmpEmail()));
     
     
     }
