@@ -1,15 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package myconcrete;
 
-/**
- *
- * @author David
- */
+// A class that holds Employee properties and methods
+
 public class Employee {
+    
+    // Declared local variables
+    
+    private String empFirstName, 
+                    empLastName,
+                    empAddress,
+                    empCity,
+                    empState,
+                    empEmail; // Holds important employee info
+    
+    private int empIDnumber,
+                empZip,
+                empPhone; // Holds numeric employee info
+    
+    
+    // Methods that will store the local variables as public arguments
+    
     
 }
