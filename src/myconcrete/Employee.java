@@ -21,6 +21,26 @@ public class Employee {
                 empZip; // Holds numeric employee info
     
 
+// Constructor for the created variables
+    public Employee(String empFirstName, String empLastName, String 
+            empBirthdate, String empAddress, String empCity, String empState, 
+            String empEmail, String empPhone, String empDept, int empIDNumber, 
+            int empZip) 
+    {
+        this.empFirstName = empFirstName;
+        this.empLastName = empLastName;
+        this.empBirthdate = empBirthdate;
+        this.empAddress = empAddress;
+        this.empCity = empCity;
+        this.empState = empState;
+        this.empEmail = empEmail;
+        this.empPhone = empPhone;
+        this.empDept = empDept;
+        this.empIDNumber = empIDNumber;
+        this.empZip = empZip;
+    }
+    
+    
 // Methods that will store the local variables as public arguments
     public String getEmpFirstName() {
         return empFirstName;
