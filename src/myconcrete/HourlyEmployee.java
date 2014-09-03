@@ -2,24 +2,21 @@
 package myconcrete;
 
 public class HourlyEmployee extends Employee {
-    
-// variables needed exclusively for hourly employees
- private double hoursWorked;
- private double payRate;
 
- // Constructor created for new exclusive variables as well as
- // the variables inherited by the superclass
-    public HourlyEmployee(double hoursWorked, double payRate, String 
-            empFirstName, String empLastName, String empBirthdate, String 
-                    empAddress, String empCity, String empState, String 
-                            empEmail, String empPhone, String empDept, int 
-                                    empIDNumber, int empZip) 
-    {
-        super(empFirstName, empLastName, empBirthdate, empAddress, 
-                empCity, empState, empEmail, empPhone, empDept, empIDNumber, 
-                empZip);
-        this.hoursWorked = hoursWorked;
-        this.payRate = payRate;
+    // Local variables
+    private double hoursWorked; // for hours worked by employee
+    private double payRate; // Rate of pay for employee
+    
+    public HourlyEmployee() {
+    }
+
+    public HourlyEmployee(String name, String dept, int empID) {
+        super(name, dept, empID);
+    }
+    
+    @Override
+    public void employeeType() {
+        System.out.println("Hourly Employee");
     }
     
     // Methods for setting and getting hoursWorked and payRate

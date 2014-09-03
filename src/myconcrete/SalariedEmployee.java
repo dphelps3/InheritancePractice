@@ -8,22 +8,19 @@ public class SalariedEmployee extends Employee {
  private double stipends = yearlySalary / 24; // Yearly salary divided
                         // by 24 ( Employee is paid twice a month)
 
- // Constructor created for new exclusive variables as well as
- // the variables inherited by the superclass
-    public SalariedEmployee(double yearlySalary, double stipends, String 
-            empFirstName, String empLastName, String empBirthdate, String 
-                    empAddress, String empCity, String empState, String 
-                            empEmail, String empPhone, String empDept, int 
-                                    empIDNumber, int empZip) 
-    {
-        super(empFirstName, empLastName, empBirthdate, empAddress, 
-                empCity, empState, empEmail, empPhone, empDept, empIDNumber, 
-                empZip);
-        this.yearlySalary = yearlySalary;
-        this.stipends = stipends;
+    public SalariedEmployee() {
+    }
+
+    public SalariedEmployee(String name, String dept, int empID) {
+        super(name, dept, empID);
     }
     
-    // Methods for setting and getting yearlySalary and stipends
+    @Override
+    public void employeeType() {
+        System.out.println("Salaried Employee");
+    }
+    
+    // Methods for setting and getting hoursWorked and payRate
     public double getYearlySalary() {
         return yearlySalary;
     }
@@ -35,11 +32,7 @@ public class SalariedEmployee extends Employee {
     public double getStipends() {
         return stipends;
     }
-
-    public void setStipends(double stipends) {
-        this.stipends = stipends;
-    }
-    
+   
  
  
     }
