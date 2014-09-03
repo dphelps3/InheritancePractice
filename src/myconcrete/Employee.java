@@ -5,131 +5,56 @@ package myconcrete;
 
 public class Employee {
     
-    // Declared local variables
-    
-    private String empFirstName, 
-                    empLastName,
-                    empBirthdate,
-                    empAddress,
-                    empCity,
-                    empState,
-                    empEmail, // Holds personal employee info
-                    empPhone,
-                    empDept; // Holds employee company info
-    
-    private int empIDNumber,
-                empZip; // Holds numeric employee info
-    
+    // Common properties to all subclasses
+    private String name;
+    private String dept;
+    private int empID; // Employee ID can be up to 3 digits (up to 999)
 
-// Constructor for the created variables
-    public Employee(String empFirstName, String empLastName, String 
-            empBirthdate, String empAddress, String empCity, String empState, 
-            String empEmail, String empPhone, String empDept, int empIDNumber, 
-            int empZip) 
-    {
-        this.empFirstName = empFirstName;
-        this.empLastName = empLastName;
-        this.empBirthdate = empBirthdate;
-        this.empAddress = empAddress;
-        this.empCity = empCity;
-        this.empState = empState;
-        this.empEmail = empEmail;
-        this.empPhone = empPhone;
-        this.empDept = empDept;
-        this.empIDNumber = empIDNumber;
-        this.empZip = empZip;
+    // Two constructors, for convenience...
+    
+    public Employee() {
+    }
+
+    public Employee(String name, String dept, int empID) {
+        this.name = name;
+        this.dept = dept;
+        this.empID = empID;
     }
     
+    public void employeeType() {
+        System.out.println("Regular Employee");
+    }
+
+    // Just some necessary accessors and mutators for our properties...
     
-// Methods that will store the local variables as public arguments
-    public String getEmpFirstName() {
-        return empFirstName;
+    public int getEmpID() {
+        return empID;
     }
 
-    public void setEmpFirstName(String empFirstName) {
-        this.empFirstName = empFirstName;
+    public void setEmpID(int empID) {
+        if(empID < 0 || empID > 1000) {
+            throw new IllegalArgumentException();
+        }
+        this.empID = empID;
     }
 
-    public String getEmpLastName() {
-        return empLastName;
+    public String getName() {
+        return name;
     }
 
-    public void setEmpLastName(String empLastName) {
-        this.empLastName = empLastName;
+    public void setName(String name) {
+        // validation needed for name
+        this.name = name;
+    }
+    
+    public String getDept() {
+        return dept;
     }
 
-    public String getEmpBirthdate() {
-        return empBirthdate;
+    public void setDept(String dept) {
+        // validation needed for name
+        this.dept = dept;
     }
-
-    public void setEmpBirthdate(String empBirthdate) {
-        this.empBirthdate = empBirthdate;
-    }
-
-    public String getEmpAddress() {
-        return empAddress;
-    }
-
-    public void setEmpAddress(String empAddress) {
-        this.empAddress = empAddress;
-    }
-
-    public String getEmpCity() {
-        return empCity;
-    }
-
-    public void setEmpCity(String empCity) {
-        this.empCity = empCity;
-    }
-
-    public String getEmpState() {
-        return empState;
-    }
-
-    public void setEmpState(String empState) {
-        this.empState = empState;
-    }
-
-    public String getEmpEmail() {
-        return empEmail;
-    }
-
-    public void setEmpEmail(String empEmail) {
-        this.empEmail = empEmail;
-    }
-
-    public String getEmpPhone() {
-        return empPhone;
-    }
-
-    public void setEmpPhone(String empPhone) {
-        this.empPhone = empPhone;
-    }
-
-    public String getEmpDept() {
-        return empDept;
-    }
-
-    public void setEmpDept(String empDept) {
-        this.empDept = empDept;
-    }
-
-    public int getEmpIDNumber() {
-        return empIDNumber;
-    }
-
-    public void setEmpIDNumber(int empIDNumber) {
-        this.empIDNumber = empIDNumber;
-    }
-
-    public int getEmpZip() {
-        return empZip;
-    }
-
-    public void setEmpZip(int empZip) {
-        this.empZip = empZip;
-    }
-     
-     
-     
+    
+    
 }
