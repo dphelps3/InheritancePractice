@@ -1,9 +1,8 @@
-
 package myconcrete;
 
 import java.util.Scanner;
 
-public class EmployeeInput {
+public class Startup {
     
     public static void main(String[] args) {
         
@@ -101,4 +100,3 @@ public class EmployeeInput {
     
     }
 }
-

@@ -1,9 +1,8 @@
-
-package myconcrete;
+package myabstract;
 
 import java.util.Scanner;
 
-public class EmployeeInput {
+public class Startup {
     
     public static void main(String[] args) {
         
@@ -11,7 +10,7 @@ public class EmployeeInput {
     double payRate = 15.75;
     
     HourlyEmployee hemp1 = new HourlyEmployee();
-    hemp1.setHoursWorked(hoursWorked);
+    hemp1.;
     hemp1.setPayRate(payRate);
     
     System.out.println("Total pay is: " + (hemp1.getHoursWorked() * 
