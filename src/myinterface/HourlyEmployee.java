@@ -16,23 +16,14 @@ public class HourlyEmployee implements Employee {
         this.empID = empID;
     }
     
-    // We cannot forget to override these. Inheriting from an Interface is a
-    // contractual obligation that forces us
-    // to do this. Try commenting out any of these methods and see how you get an
-    // error.
     @Override
     public void displayEmployeeType() {
-        System.out.println("Meow");
+        System.out.println("Hourly Employee");
     }
 
     @Override
-    public int getName() {
-        return name;
-    }
-
-    @Override
-    public void setAge(int age) {
-        this.age = age;
+    public String getDept() {
+        return dept;
     }
 
     @Override
@@ -41,9 +32,66 @@ public class HourlyEmployee implements Employee {
     }
 
     @Override
-    public void setName(String name) {
-        this.name = name;
+    public int getEmpID() {
+        return empID;
     }
+
+    @Override
+    public void setName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setDept() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setEmpID() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public double getYearlySalary() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setYearlySalary() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public double getStipends() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public double getSpcSalary() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public double setSpcSalary() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public double getSpcStipends() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public double getSpcCommission() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public double setSpcCommission() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
 
 
 }

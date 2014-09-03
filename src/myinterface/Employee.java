@@ -17,5 +17,21 @@ public interface Employee {
     
     public abstract void setEmpID();
     
+    public abstract double getYearlySalary();
+    
+    public abstract void setYearlySalary();
+    
+    public abstract double getStipends();
+    
+    public abstract double getSpcSalary();
+    
+    public abstract double setSpcSalary();
+    
+    public abstract double getSpcStipends();
+    
+    public abstract double getSpcCommission();
+    
+    public abstract double setSpcCommission();
+    
 }
    
