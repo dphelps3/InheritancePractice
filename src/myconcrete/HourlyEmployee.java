@@ -10,6 +10,8 @@ package myconcrete;
  *
  * @author David
  */
-public class HourlyEmployee {
+public class HourlyEmployee extends Employee {
+    
+ 
     
 }
