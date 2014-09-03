@@ -13,13 +13,32 @@ public class HourlyEmployee extends Employee {
             empFirstName, String empLastName, String empBirthdate, String 
                     empAddress, String empCity, String empState, String 
                             empEmail, String empPhone, String empDept, int 
-                                    empIDNumber, int empZip) {
+                                    empIDNumber, int empZip) 
+    {
         super(empFirstName, empLastName, empBirthdate, empAddress, 
                 empCity, empState, empEmail, empPhone, empDept, empIDNumber, 
                 empZip);
         this.hoursWorked = hoursWorked;
         this.payRate = payRate;
     }
+    
+    // Methods for setting and getting hoursWorked and payRate
+    public double getHoursWorked() {
+        return hoursWorked;
+    }
+
+    public void setHoursWorked(double hoursWorked) {
+        this.hoursWorked = hoursWorked;
+    }
+
+    public double getPayRate() {
+        return payRate;
+    }
+
+    public void setPayRate(double payRate) {
+        this.payRate = payRate;
+    }
+    
  
  
     }
