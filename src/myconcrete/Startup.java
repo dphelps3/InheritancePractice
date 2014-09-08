@@ -1,6 +1,6 @@
 package myconcrete;
 
-import java.util.Scanner;
+import java.util.Scanner; // Import the scanner for later keyboard use
 
 public class Startup {
     
@@ -9,12 +9,12 @@ public class Startup {
     double hoursWorked = 40;
     double payRate = 15.75;
     
-    HourlyEmployee hemp1 = new HourlyEmployee();
-    hemp1.setHoursWorked(hoursWorked);
-    hemp1.setPayRate(payRate);
+    HourlyEmployee hourlyEmp1 = new HourlyEmployee();
+    hourlyEmp1.setHoursWorked(hoursWorked);
+    hourlyEmp1.setPayRate(payRate);
     
-    System.out.println("Total pay is: " + (hemp1.getHoursWorked() * 
-            hemp1.getPayRate()));
+    System.out.println("Total pay is: $" + (hourlyEmp1.getHoursWorked() * 
+            hourlyEmp1.getPayRate()));
     
     // Public variables that will link with the private variables of
     // the Employee class

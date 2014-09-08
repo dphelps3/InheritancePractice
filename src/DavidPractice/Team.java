@@ -1,10 +1,6 @@
 
 package DavidPractice;
 
-/**
- *
- * @author David
- */
 public interface Team {
     
     public abstract void coach();

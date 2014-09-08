@@ -1,7 +1,7 @@
 
 package myabstract;
 
-public class SalaryPlusCommissionEmployee extends Employee {
+public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     
     // private variables
     private int spcSalary;

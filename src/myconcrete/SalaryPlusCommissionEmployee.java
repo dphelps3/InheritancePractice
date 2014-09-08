@@ -1,7 +1,7 @@
 
 package myconcrete;
 
-public class SalaryPlusCommissionEmployee extends Employee {
+public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     
 // variables needed exclusively for hourly employees
  private double spcSalary;
