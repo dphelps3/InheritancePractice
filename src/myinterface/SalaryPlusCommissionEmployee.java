@@ -1,7 +1,7 @@
 
 package myinterface;
 
-public class SalaryPlusCommissionEmployee implements Employee {
+public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     
     private double spcSalary;
     private double spcStipends = spcSalary / 24; // Yearly salary divided
