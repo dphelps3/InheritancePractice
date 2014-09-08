@@ -43,9 +43,13 @@ public class HourlyEmployee extends Employee {
         return payRate;
     }
 
-    public void setName(double payRate) {
+    public void setPayRate(double payRate) {
         // validation needed for name
         this.payRate = payRate;
+    }
+    
+    public double displayHourlyEmployeePay() {
+        return payRate * hoursWorked;
     }
     
 }
